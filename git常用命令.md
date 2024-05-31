@@ -1,7 +1,6 @@
 连接github第一次上传必须输密码
 使用加速器时 要输入` git config --global http.sslVerify false`//关闭SSL认证,才能上传成功
-
-克隆仓库：
+`echo "#template" >> README.md` //将#template写入README.md
 `git clone <git地址>`
 初始化仓库：`git init` 
 
@@ -120,3 +119,23 @@ node_modules/
 origin  https://github.com/username/repo.git (fetch)
 origin  https://github.com/username/repo.git (push)
 ```
+删除远程连接 `git remote remove <remote_name>`
+
+** 修改信息 **
+查看当前用户名`git config --global user.name`
+
+查看当前邮箱 `git config --global user.email`
+
+如果你想查看所有的全局配置信息 `git config --global --list`
+
+查看当前仓库配置的所有信息 `git config --list`
+
+* 修改上传账户的用户名
+1. 修改绑定邮箱
+	```
+	git config --global user.name "name" 
+	git config --global user.email 1111111@qq.com //邮箱账户绑定的邮箱1
+	```
+2. 修改公钥
+
+3. Windows搜索 凭据管理器 -> Windows凭据 -> 删除github网站的信息
